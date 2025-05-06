@@ -37,76 +37,32 @@ First Link
 ![link1](https://latex.codecogs.com/svg.image?$$x_{c1}=l_c\cos(\theta_1),\quad&space;y_{c1}=l_c\sin(\theta_1)$$$$\dot{x}_{c1}=-l_c\sin(\theta_1)\dot{\theta}_1,\quad\dot{y}_{c1}=l_c\cos(\theta_1)\dot{\theta}_1,$$$$T_1=\frac{1}{2}(m&space;l_c^2&plus;I)\dot{\theta}_1^2,\quad&space;I=\frac{1}{12}m&space;L^2.$$)
 
 Second Link
+
 ![link2](https://latex.codecogs.com/svg.image?$$x_{c2}=L\cos(\theta_1)&plus;l_c\cos(\theta_1&plus;\theta_2),\quad&space;y_{c2}=L\sin(\theta_1)&plus;l_c\sin(\theta_1&plus;\theta_2),$$$$\dot{x}_{c2}=-L\sin(\theta_1)\dot{\theta}_1-l_c\sin(\theta_1&plus;\theta_2)(\dot{\theta}_1&plus;\dot{\theta}_2),$$$$\dot{y}_{c2}=L\cos(\theta_1)\dot{\theta}_1&plus;l_c\cos(\theta_1&plus;\theta_2)(\dot{\theta}_1&plus;\dot{\theta}_2),$$$$T_2=\frac{1}{2}m\left[L^2\dot{\theta}_1^2&plus;l_c^2(\dot{\theta}_1&plus;\dot{\theta}_2)^2&plus;2&space;L&space;l_c\dot{\theta}_1(\dot{\theta}_1&plus;\dot{\theta}_2)\cos(\theta_2)\right]&plus;\frac{1}{2}I(\dot{\theta}_1&plus;\dot{\theta}_2)^2.$$)
 
 Total Kinetic Energy
 
-$$
-T = \frac{1}{2} \dot{\theta}^T M(\theta) \dot{\theta},
-$$
-
-$$
-M_{11} = m l_c^2 + I + m (L^2 + l_c^2 + 2 L l_c \cos(\theta_2)) + I,
-$$
-
-$$
-M_{12} = M_{21} = m (l_c^2 + L l_c \cos(\theta_2)) + I,
-$$
-
-$$
-M_{22} = m l_c^2 + I.
-$$
+![Total](https://latex.codecogs.com/svg.image?$$T=\frac{1}{2}\dot{\theta}^T&space;M(\theta)\dot{\theta},$$$$M_{11}=m&space;l_c^2&plus;I&plus;m(L^2&plus;l_c^2&plus;2&space;L&space;l_c\cos(\theta_2))&plus;I,$$$$M_{12}=M_{21}=m(l_c^2&plus;L&space;l_c\cos(\theta_2))&plus;I,$$$$M_{22}=m&space;l_c^2&plus;I.$$)
 
 Potential Energy V
 
-$$
-V = m g (l_c + L) \sin(\theta_1) + m g l_c \sin(\theta_1 + \theta_2).
-$$
+![Potential](https://latex.codecogs.com/svg.image?$$V=m&space;g(l_c&plus;L)\sin(\theta_1)&plus;m&space;g&space;l_c\sin(\theta_1&plus;\theta_2).$$)
 
 Lagrangian
 
-$$
+$
 \mathcal{L} = T - V.
-$$
+$
 
-Inertia Matrix M(\theta)
+Inertia Matrix $ M(\theta) $
 
-$$
-\frac{\partial \mathcal{L}}{\partial \dot{\theta}} = M(\theta) \dot{\theta}, \quad \frac{d}{dt} \left( \frac{\partial \mathcal{L}}{\partial \dot{\theta}} \right) = M(\theta) \ddot{\theta} + \dot{M}(\theta) \dot{\theta},
-$$
+![M](https://latex.codecogs.com/svg.image?$$\frac{\partial\mathcal{L}}{\partial\dot{\theta}}=M(\theta)\dot{\theta},\quad\frac{d}{dt}\left(\frac{\partial\mathcal{L}}{\partial\dot{\theta}}\right)=M(\theta)\ddot{\theta}&plus;\dot{M}(\theta)\dot{\theta},$$$$\dot{M}=\frac{\partial&space;M}{\partial\theta_2}\dot{\theta}_2,\quad\frac{\partial&space;M_{11}}{\partial\theta_2}=-2&space;m&space;L&space;l_c\sin(\theta_2),\quad\frac{\partial&space;M_{12}}{\partial\theta_2}=-m&space;L&space;l_c\sin(\theta_2),\quad\frac{\partial&space;M_{22}}{\partial\theta_2}=0.$$)
 
-$$
-\dot{M} = \frac{\partial M}{\partial \theta_2} \dot{\theta}_2, \quad \frac{\partial M_{11}}{\partial \theta_2} = -2 m L l_c \sin(\theta_2), \quad \frac{\partial M_{12}}{\partial \theta_2} = -m L l_c \sin(\theta_2), \quad \frac{\partial M_{22}}{\partial \theta_2} = 0.
-$$
+Coriolis and Centrifugal Forces $ C(\theta, \dot{\theta}) $
 
-Coriolis and Centrifugal Forces C(\theta, \dot{\theta})
+![C](https://latex.codecogs.com/svg.image?$$\frac{\partial\mathcal{L}}{\partial\theta_i}=\frac{\partial&space;T}{\partial\theta_i}-\frac{\partial&space;V}{\partial\theta_i},$$$$\frac{\partial&space;T}{\partial\theta_1}=0,\quad\frac{\partial&space;T}{\partial\theta_2}=-m&space;L&space;l_c\sin(\theta_2)\dot{\theta}_1(\dot{\theta}_1&plus;\dot{\theta}_2),$$$$\frac{\partial&space;V}{\partial\theta_1}=m&space;g(l_c&plus;L)\cos(\theta_1)&plus;m&space;g&space;l_c\cos(\theta_1&plus;\theta_2),\quad\frac{\partial&space;V}{\partial\theta_2}=m&space;g&space;l_c\cos(\theta_1&plus;\theta_2),$$$$C\dot{\theta}=\dot{M}\dot{\theta}-\begin{bmatrix}\frac{\partial&space;T}{\partial\theta_1}\\\frac{\partial&space;T}{\partial\theta_2}\end{bmatrix}=\begin{bmatrix}-m&space;L&space;l_c\sin(\theta_2)(2\dot{\theta}_1\dot{\theta}_2&plus;\dot{\theta}_2^2)\\m&space;L&space;l_c\sin(\theta_2)\dot{\theta}_1^2\end{bmatrix},$$$$h=m&space;L&space;l_c\sin(\theta_2),\quad&space;C=\begin{bmatrix}-h\dot{\theta}_2&-h(\dot{\theta}_1&plus;\dot{\theta}_2)\\h\dot{\theta}_1&0\end{bmatrix}.$$)
 
-$$
-\frac{\partial \mathcal{L}}{\partial \theta_i} = \frac{\partial T}{\partial \theta_i} - \frac{\partial V}{\partial \theta_i},
-$$
-
-$$
-\frac{\partial T}{\partial \theta_1} = 0, \quad \frac{\partial T}{\partial \theta_2} = -m L l_c \sin(\theta_2) \dot{\theta}_1 (\dot{\theta}_1 + \dot{\theta}_2),
-$$
-
-$$
-\frac{\partial V}{\partial \theta_1} = m g (l_c + L) \cos(\theta_1) + m g l_c \cos(\theta_1 + \theta_2), \quad \frac{\partial V}{\partial \theta_2} = m g l_c \cos(\theta_1 + \theta_2),
-$$
-
-$$
-C \dot{\theta} = \dot{M} \dot{\theta} - \begin{bmatrix} \frac{\partial T}{\partial \theta_1} \\ \frac{\partial T}{\partial \theta_2} \end{bmatrix} = \begin{bmatrix} -m L l_c \sin(\theta_2) (2 \dot{\theta}_1 \dot{\theta}_2 + \dot{\theta}_2^2) \\ m L l_c \sin(\theta_2) \dot{\theta}_1^2 \end{bmatrix},
-$$
-
-$$
-h = m L l_c \sin(\theta_2), \quad C = \begin{bmatrix} -h \dot{\theta}_2 & -h (\dot{\theta}_1 + \dot{\theta}_2) \\ h \dot{\theta}_1 & 0 \end{bmatrix}.
-$$
 
 Gravity Vector G(\theta)
 
-$$
-G_1 = m g (l_c + L) \cos(\theta_1) + m g l_c \cos(\theta_1 + \theta_2),
-$$
-
-$$
-G_2 = m g l_c \cos(\theta_1 + \theta_2).
-$$
+![G](https://latex.codecogs.com/svg.image?$$G_1=m&space;g(l_c&plus;L)\cos(\theta_1)&plus;m&space;g&space;l_c\cos(\theta_1&plus;\theta_2),$$$$G_2=m&space;g&space;l_c\cos(\theta_1&plus;\theta_2).$$)
