@@ -9,6 +9,7 @@ $$
 \mathbf{G}(\mathbf{q}, m_{\text{load}}) = 
 \boldsymbol{\tau},
 $$
+![Robot Dynamics](https://latex.codecogs.com/svg.image?$$\mathbf{M}(\mathbf{q},m_{\text{load}})\ddot{\mathbf{q}}&plus;\mathbf{C}(\mathbf{q},\dot{\mathbf{q}},m_{\text{load}})\dot{\mathbf{q}}&plus;\mathbf{G}(\mathbf{q},m_{\text{load}})=\boldsymbol{\tau},$$)
 where:
 
 - \( q = [q_1, q_2]^T \): Joint angles  
