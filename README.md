@@ -72,3 +72,23 @@ $$
 Gravity Vector G
 
 ![G](https://latex.codecogs.com/svg.image?$$G_1=m&space;g(l_c&plus;L)\cos(\theta_1)&plus;m&space;g&space;l_c\cos(\theta_1&plus;\theta_2),$$$$G_2=m&space;g&space;l_c\cos(\theta_1&plus;\theta_2).$$)
+
+
+As base of numerical step 
+
+![acceleration](https://latex.codecogs.com/svg.image?$$\ddot{\mathbf{q}}=\mathbf{M}^{-1}\left(\boldsymbol{\tau}-\mathbf{C}\dot{\mathbf{q}}-\mathbf{G}\right).$$)
+
+## 3. Adaptive control
+### MRAC(Model Reference Adaptive Control)
+
+Bases on an error between real system and reference system (in this case robot without load) and basing on this error action and mass estimation are done.
+
+## 3. Result
+
+![analysis](analysis_plots.png)
+
+
+![traj](trajectory_plot.png)
+
+
+![gif](robot_tracking1.gif)
