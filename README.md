@@ -6,7 +6,7 @@ One of the main task of robot is moving of an object from start point to another
 
 
 ## 2. System Model
-### Robot Dynamics
+### Robot Dynamics(no mass)
 The Euler-Lagrange equations for a two-link robot:
 
 ![Robot Dynamics](https://latex.codecogs.com/svg.image?$$\mathbf{M}(\mathbf{q},m_{\text{load}})\ddot{\mathbf{q}}&plus;\mathbf{C}(\mathbf{q},\dot{\mathbf{q}},m_{\text{load}})\dot{\mathbf{q}}&plus;\mathbf{G}(\mathbf{q},m_{\text{load}})=\boldsymbol{\tau},$$)
