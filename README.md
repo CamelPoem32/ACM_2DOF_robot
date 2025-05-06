@@ -52,17 +52,23 @@ Lagrangian
 
 ![L](https://latex.codecogs.com/svg.image?$\mathcal{L}=T-V.$)
 
-Inertia Matrix $ M(\theta) $
+Inertia Matrix M
 
 ![M](https://latex.codecogs.com/svg.image?$$\frac{\partial\mathcal{L}}{\partial\dot{\theta}}=M(\theta)\dot{\theta},\quad\frac{d}{dt}\left(\frac{\partial\mathcal{L}}{\partial\dot{\theta}}\right)=M(\theta)\ddot{\theta}&plus;\dot{M}(\theta)\dot{\theta},$$$$\dot{M}=\frac{\partial&space;M}{\partial\theta_2}\dot{\theta}_2,\quad\frac{\partial&space;M_{11}}{\partial\theta_2}=-2&space;m&space;L&space;l_c\sin(\theta_2),\quad\frac{\partial&space;M_{12}}{\partial\theta_2}=-m&space;L&space;l_c\sin(\theta_2),\quad\frac{\partial&space;M_{22}}{\partial\theta_2}=0.$$)
 
-Coriolis and Centrifugal Forces $ C(\theta, \dot{\theta}) $
+Coriolis and Centrifugal Forces C
 
 ![M1](https://latex.codecogs.com/svg.image?$$\frac{\partial\mathcal{L}}{\partial\theta_i}=\frac{\partial&space;T}{\partial\theta_i}-\frac{\partial&space;V}{\partial\theta_i},$$$$\frac{\partial&space;T}{\partial\theta_1}=0,\quad\frac{\partial&space;T}{\partial\theta_2}=-m&space;L&space;l_c\sin(\theta_2)\dot{\theta}_1(\dot{\theta}_1&plus;\dot{\theta}_2),$$$$\frac{\partial&space;V}{\partial\theta_1}=m&space;g(l_c&plus;L)\cos(\theta_1)&plus;m&space;g&space;l_c\cos(\theta_1&plus;\theta_2),\quad\frac{\partial&space;V}{\partial\theta_2}=m&space;g&space;l_c\cos(\theta_1&plus;\theta_2),$$)
 
-![M2](https://latex.codecogs.com/svg.image?$$C\dot{\theta}=\begin{bmatrix}-m&space;L&space;l_c\sin(\theta_2)(2\dot{\theta}_1\dot{\theta}_2&plus;\dot{\theta}_2^2)\\m&space;L&space;l_c\sin(\theta_2)\dot{\theta}_1^2\end{bmatrix},$$$$h=m&space;L&space;l_c\sin(\theta_2),\quad&space;C=\begin{bmatrix}-h\dot{\theta}_2&-h(\dot{\theta}_1&plus;\dot{\theta}_2)\\h\dot{\theta}_1&0\end{bmatrix}.$$)
+$$
+C \dot{\theta} = \begin{bmatrix} -m L l_c \sin(\theta_2) (2 \dot{\theta}_1 \dot{\theta}_2 + \dot{\theta}_2^2) \\ m L l_c \sin(\theta_2) \dot{\theta}_1^2 \end{bmatrix},
+$$
+
+$$
+h = m L l_c \sin(\theta_2), \quad C = \begin{bmatrix} -h \dot{\theta}_2 & -h (\dot{\theta}_1 + \dot{\theta}_2) \\ h \dot{\theta}_1 & 0 \end{bmatrix}.
+$$
 
 
-Gravity Vector G(\theta)
+Gravity Vector G
 
 ![G](https://latex.codecogs.com/svg.image?$$G_1=m&space;g(l_c&plus;L)\cos(\theta_1)&plus;m&space;g&space;l_c\cos(\theta_1&plus;\theta_2),$$$$G_2=m&space;g&space;l_c\cos(\theta_1&plus;\theta_2).$$)
