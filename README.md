@@ -1,6 +1,11 @@
 # ACM_2DOF_robot
 
-## 1. System Model
+## 1. Idea
+![manipulators](https://www.universal-robots.com/media/1814006/ur16e_all_3.jpg)
+One of the main task of robot is moving of an object from start point to another. And it is possible that load that being moved is unknown and can affect on dynamics of the system - so standart controll won't work. In this situation Adapive one can help
+
+
+## 2. System Model
 ### Robot Dynamics
 The Euler-Lagrange equations for a two-link robot:
 
