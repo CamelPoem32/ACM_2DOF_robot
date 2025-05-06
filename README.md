@@ -18,7 +18,7 @@ where:
 - $\mathbf{C}$: Coriolis and centrifugal forces matrix
 - $\mathbf{G}$: Gravitational force vector
 
-$l_c = 0.5L $ -  position of center of masses
+$ \quad l_c = \frac{L}{2} $ -  position of center of masses
 
 Matrixes comes from equation:
 
@@ -34,35 +34,10 @@ Kinetic Energy T
 
 First Link
 
-$$
-x_{c1} = l_c \cos(\theta_1), \quad y_{c1} = l_c \sin(\theta_1), \quad l_c = \frac{L}{2},
-$$
-
-$$
-\dot{x}_{c1} = -l_c \sin(\theta_1) \dot{\theta}_1, \quad \dot{y}_{c1} = l_c \cos(\theta_1) \dot{\theta}_1,
-$$
-
-$$
-T_1 = \frac{1}{2} (m l_c^2 + I) \dot{\theta}_1^2, \quad I = \frac{1}{12} m L^2.
-$$
+![link1](https://latex.codecogs.com/svg.image?$$x_{c1}=l_c\cos(\theta_1),\quad&space;y_{c1}=l_c\sin(\theta_1)$$$$\dot{x}_{c1}=-l_c\sin(\theta_1)\dot{\theta}_1,\quad\dot{y}_{c1}=l_c\cos(\theta_1)\dot{\theta}_1,$$$$T_1=\frac{1}{2}(m&space;l_c^2&plus;I)\dot{\theta}_1^2,\quad&space;I=\frac{1}{12}m&space;L^2.$$)
 
 Second Link
-
-$$
-x_{c2} = L \cos(\theta_1) + l_c \cos(\theta_1 + \theta_2), \quad y_{c2} = L \sin(\theta_1) + l_c \sin(\theta_1 + \theta_2),
-$$
-
-$$
-\dot{x}_{c2} = -L \sin(\theta_1) \dot{\theta}_1 - l_c \sin(\theta_1 + \theta_2) (\dot{\theta}_1 + \dot{\theta}_2),
-$$
-
-$$
-\dot{y}_{c2} = L \cos(\theta_1) \dot{\theta}_1 + l_c \cos(\theta_1 + \theta_2) (\dot{\theta}_1 + \dot{\theta}_2),
-$$
-
-$$
-T_2 = \frac{1}{2} m \left[ L^2 \dot{\theta}_1^2 + l_c^2 (\dot{\theta}_1 + \dot{\theta}_2)^2 + 2 L l_c \dot{\theta}_1 (\dot{\theta}_1 + \dot{\theta}_2) \cos(\theta_2) \right] + \frac{1}{2} I (\dot{\theta}_1 + \dot{\theta}_2)^2.
-$$
+![link2](https://latex.codecogs.com/svg.image?$$x_{c2}=L\cos(\theta_1)&plus;l_c\cos(\theta_1&plus;\theta_2),\quad&space;y_{c2}=L\sin(\theta_1)&plus;l_c\sin(\theta_1&plus;\theta_2),$$$$\dot{x}_{c2}=-L\sin(\theta_1)\dot{\theta}_1-l_c\sin(\theta_1&plus;\theta_2)(\dot{\theta}_1&plus;\dot{\theta}_2),$$$$\dot{y}_{c2}=L\cos(\theta_1)\dot{\theta}_1&plus;l_c\cos(\theta_1&plus;\theta_2)(\dot{\theta}_1&plus;\dot{\theta}_2),$$$$T_2=\frac{1}{2}m\left[L^2\dot{\theta}_1^2&plus;l_c^2(\dot{\theta}_1&plus;\dot{\theta}_2)^2&plus;2&space;L&space;l_c\dot{\theta}_1(\dot{\theta}_1&plus;\dot{\theta}_2)\cos(\theta_2)\right]&plus;\frac{1}{2}I(\dot{\theta}_1&plus;\dot{\theta}_2)^2.$$)
 
 Total Kinetic Energy
 
