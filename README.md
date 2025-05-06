@@ -18,7 +18,7 @@ where:
 - $\mathbf{C}$: Coriolis and centrifugal forces matrix
 - $\mathbf{G}$: Gravitational force vector
 
-$ \quad l_c = \frac{L}{2} $ -  position of center of masses
+![lc](https://latex.codecogs.com/svg.image?$\quad&space;l_c=\frac{L}{2}$-position&space;of&space;center&space;of&space;masses)
 
 Matrixes comes from equation:
 
@@ -50,9 +50,7 @@ Potential Energy V
 
 Lagrangian
 
-$
-\mathcal{L} = T - V.
-$
+![L](https://latex.codecogs.com/svg.image?$\mathcal{L}=T-V.$)
 
 Inertia Matrix $ M(\theta) $
 
@@ -62,7 +60,7 @@ Coriolis and Centrifugal Forces $ C(\theta, \dot{\theta}) $
 
 ![M1](https://latex.codecogs.com/svg.image?$$\frac{\partial\mathcal{L}}{\partial\theta_i}=\frac{\partial&space;T}{\partial\theta_i}-\frac{\partial&space;V}{\partial\theta_i},$$$$\frac{\partial&space;T}{\partial\theta_1}=0,\quad\frac{\partial&space;T}{\partial\theta_2}=-m&space;L&space;l_c\sin(\theta_2)\dot{\theta}_1(\dot{\theta}_1&plus;\dot{\theta}_2),$$$$\frac{\partial&space;V}{\partial\theta_1}=m&space;g(l_c&plus;L)\cos(\theta_1)&plus;m&space;g&space;l_c\cos(\theta_1&plus;\theta_2),\quad\frac{\partial&space;V}{\partial\theta_2}=m&space;g&space;l_c\cos(\theta_1&plus;\theta_2),$$)
 
-![M2](https://latex.codecogs.com/svg.image?$$C\dot{\theta}=\dot{M}\dot{\theta}-\begin{bmatrix}\frac{\partial&space;T}{\partial\theta_1}\\\frac{\partial&space;T}{\partial\theta_2}\end{bmatrix}=\begin{bmatrix}-m&space;L&space;l_c\sin(\theta_2)(2\dot{\theta}_1\dot{\theta}_2&plus;\dot{\theta}_2^2)\\m&space;L&space;l_c\sin(\theta_2)\dot{\theta}_1^2\end{bmatrix},$$$$h=m&space;L&space;l_c\sin(\theta_2),\quad&space;C=\begin{bmatrix}-h\dot{\theta}_2&-h(\dot{\theta}_1&plus;\dot{\theta}_2)\\h\dot{\theta}_1&0\end{bmatrix}.$$)
+![M2](https://latex.codecogs.com/svg.image?$$C\dot{\theta}=\begin{bmatrix}-m&space;L&space;l_c\sin(\theta_2)(2\dot{\theta}_1\dot{\theta}_2&plus;\dot{\theta}_2^2)\\m&space;L&space;l_c\sin(\theta_2)\dot{\theta}_1^2\end{bmatrix},$$$$h=m&space;L&space;l_c\sin(\theta_2),\quad&space;C=\begin{bmatrix}-h\dot{\theta}_2&-h(\dot{\theta}_1&plus;\dot{\theta}_2)\\h\dot{\theta}_1&0\end{bmatrix}.$$)
 
 
 Gravity Vector G(\theta)
